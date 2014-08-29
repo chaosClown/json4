@@ -1,4 +1,6 @@
 var json4 = (function() {
+	"use strict";
+
 	function json(input) {
 		var charCode;
 		
@@ -40,7 +42,7 @@ var json4 = (function() {
 			}
 			
 			var result = {};
-			var id, start;
+			var id, start, tmp;
 			
 			do {
 				while((charCode = input.charCodeAt(this.index)) <= 32) {
